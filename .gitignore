@@ -28,6 +28,9 @@ docker-compose.yml
 # Bower
 /pinry/static/vendor/
 
+# Node
+/node_modules/
+
 # sphinx
 /docs/_build/
 

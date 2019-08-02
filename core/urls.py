@@ -13,4 +13,6 @@ urlpatterns = [
         name='pin-detail'),
     url(r'^$', TemplateView.as_view(template_name='core/pins.html'),
         name='recent-pins'),
+    url(r'^beta/$', TemplateView.as_view(template_name='core/pins-beta.html'),
+        name='beta-pins'),
 ]
