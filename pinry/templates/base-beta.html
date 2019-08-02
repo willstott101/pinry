@@ -24,21 +24,23 @@
 
         <!-- Start JavaScript Variables -->
         <script>
-        var apiLimitPerPage = {{ API_LIMIT_PER_PAGE }},
-            errors = {% if not messages %}null,{% else %}[
+        const ServerData = {
+            apiLimitPerPage: {{ API_LIMIT_PER_PAGE }},
+            errors: [
                 {% for message in messages %}{
                     tags: "{{ message.tags }}",
                     text: "{{ message }}"
                 }{% endfor %}
-            ],{% endif %}
-            currentUser = {
+            ],
+            currentUser: {
                 id: "{{ user.id }}",
                 username: "{{ user.username }}",
                 gravatar: "{{ user.gravatar }}"
             },
-            pinFilter = "{{ request.resolver_match.kwargs.pin }}",
-            tagFilter = "{{ request.resolver_match.kwargs.tag }}",
-            userFilter = "{{ request.resolver_match.kwargs.username }}";
+            pinFilter: "{{ request.resolver_match.kwargs.pin }}",
+            tagFilter: "{{ request.resolver_match.kwargs.tag }}",
+            userFilter: "{{ request.resolver_match.kwargs.username }}",
+        };
         </script>
         <!-- End JavaScript Variables -->
     </head>

@@ -4,6 +4,7 @@
 
 <script>
 export default {
+  name: 'pin',
   data () {
     return {
       message: 'Hello world!'

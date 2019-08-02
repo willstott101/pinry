@@ -1,9 +1,13 @@
 import Vue from '../node_modules/vue/dist/vue.js';
-import Pin from './Pin.vue';
+import PinList from './PinList.vue';
 
 const app = new Vue({
   el: '#vue',
   components: {
-    'pin': Pin,
-  }
+    'pin-list': PinList,
+  },
+  data: {
+    pins: [],
+    status: 'loading',
+  },
 });

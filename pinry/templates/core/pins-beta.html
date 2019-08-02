@@ -1,8 +1,7 @@
 {% extends "base-beta.html" %}
 
 {% block yield %}
-    <div class="pins">
-        <pin v-for="post in posts"></pin>
-    </div>
+    <pin-list>
+    </pin-list>
     <div class="spinner"></div>
 {% endblock %}
