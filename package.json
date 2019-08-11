@@ -26,6 +26,7 @@
   "homepage": "https://github.com/pinry/pinry#readme",
   "devDependencies": {
     "@vue/cli": "^3.9.3",
+    "escape-html": "^1.0.3",
     "rollup": "^1.17.0",
     "rollup-plugin-buble": "^0.19.8",
     "rollup-plugin-commonjs": "^10.0.1",

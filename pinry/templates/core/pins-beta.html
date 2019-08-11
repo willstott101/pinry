@@ -1,7 +1,7 @@
 {% extends "base-beta.html" %}
 
 {% block yield %}
-    <pin-list>
+    <pin-list v-bind:pins="pins">
     </pin-list>
-    <div class="spinner"></div>
+    <div class="spinner" v-if="loading"></div>
 {% endblock %}
